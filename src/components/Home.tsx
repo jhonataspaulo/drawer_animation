@@ -14,6 +14,28 @@ export const Home: React.FC<Props> = () => {
   return (
     <Container>
       <Space h={16} />
+      <Box flexDirection="row" align="center" justify="space-between">
+        <Icon name="menu" type="Entypo" size={32} color="#333" />
+        <Box flexDirection="row" align="center">
+          <TextBase>Olá, </TextBase>
+          <TextBase style={{fontWeight: 'bold'}}>Jhonatas</TextBase>
+          <Space w={8} />
+          <Box
+            style={{
+              width: 40,
+              height: 40,
+              borderRadius: 16,
+              overflow: 'hidden',
+            }}>
+            <Image
+              style={{width: '100%', height: '100%'}}
+              source={{
+                uri: 'https://github.com/jhonataspaulo.png',
+              }}
+            />
+          </Box>
+        </Box>
+      </Box>
       <TextBase fz={35} style={{fontWeight: 'bold'}}>
         My musics
       </TextBase>
